@@ -1,0 +1,21 @@
+<section class="local-page">
+    <div class="localizacao-container">
+        <h2 class="local-title w-50">Localização</h2>
+        <div class="categorias-container">
+          <div class="categoria" *ngFor="let local of localizacoes">
+            <div class="categoria-content" *ngIf="local.visibility">
+              <div class="categoria-header">
+                  <h3>{{ local.categoria }}</h3>
+                  <button (click)="toggleVisibility(local)" type="button" class="fs-5 btn btn-close" aria-label="Close"></button>
+              </div>
+              <ul>
+                <li class="categoria-item" *ngFor="let item of local.itens">
+                  <p>{{ item.name }}</p>
+                  <p>{{ item.time }}</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</section>

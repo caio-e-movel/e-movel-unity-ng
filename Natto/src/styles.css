@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --natto-primary: rgba(77,93,85,188);
+    --natto-primary-2: #424242;
+    --natto-primary-dark: #2f2f2f;
+    --natto-primary-light: #666;
+    --natto-secondary: rgba(255, 130, 0, 255);
+    --natto-secondary-2: #ff5733;
+    --card-home-hover: #C3C3C3;
+    --card-home-bg: #e5e5e5;
+}
+
+body{
+    background-color: var(--natto-primary-dark);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,77 @@
+.project-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url('../../assets/imgs fundo/fundo2.jpg');
+}
+.project-bg-img{
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+img {
+    height: 100%;
+    
+}
+
+.project-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+}
+
+.project-bg {
+    position: relative;
+    text-align: center;
+}
+
+.project-bg-btns {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-btn {
+    background-color: var(--natto-secondary);
+    color: #fff;
+    padding: 5px;
+}
+
+.project-btn:hover {
+    background-color: var(--natto-secondary-2);
+    scale: 1.05;
+}
+
+.modal-content.bg-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+.tech-details {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+}
+
+.tech-column {
+    width: 30%;
+}
+
+.tech-column h5 {
+    color: #dd6b20;
+    /* A cor laranja utilizada na imagem */
+}
+
+.tech-column p {
+    margin: 5px 0;
+}
+
+.modal-header button{
+    color: #fff;
+}
+
+.modal-content{
+}

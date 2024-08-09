@@ -1,0 +1,19 @@
+.menu__item{
+    background-color: var(--natto-primary);
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.menu__item:hover{
+    cursor: pointer;
+    background-color: var(--natto-secondary-2);
+    scale: 1.05;
+}
+.menu__item:focus{
+    background-color: var(--natto-secondary);
+}
