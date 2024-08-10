@@ -1,1 +1,23 @@
-<p>area-comum works!</p>
+<section class="area-comum-container">
+    <div class="side-menu">
+      <button class="menu-item" *ngFor="let floor of floors" [ngClass]="{'active': selectedFloor === floor.key}" (click)="selectFloor(floor.key)">{{floor.label}}</button>
+    </div>
+    <div class="planta-container">
+        <div class="painel" *ngFor="let floor of floors">
+          <div [ngClass]="'painel-' + floor.key" *ngIf="selectedFloor === floor.key">
+            <div class="floor-plan">
+              <img [src]="floor.imgSrc" [alt]="'Planta do ' + floor.label">
+            </div>
+            <div class="floor-info">
+              <div class="info-item" *ngFor="let info of selectedFloorInfo">
+                {{info.number}} {{info.description}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  
+  
+  </section>
+  
