@@ -1,7 +1,8 @@
 <section class="apto-container">
     <div class="side-menu">
         <div class="navigation-side-wrap">
-            <button class="navigation-button" mat-icon-button (click)="changePage('prev')" [disabled]="currentPage === 1">
+            <button class="navigation-button" mat-icon-button (click)="changePage('prev')"
+                [disabled]="currentPage === 1">
                 <mat-icon>arrow_back_ios</mat-icon>
             </button>
             <div class="menu-button-container">
@@ -27,14 +28,26 @@
 
     <div class="planta-container">
         <div *ngFor="let apto of currentAptos" class="apto-details">
-            <img [src]="apto.imgSrc" alt="Planta do Apto {{apto.number}}" />
-            <div class="apto-info">
-                <p>Tipologia do Apto: {{ apto.tipologia }}</p>
-                <p>Área Apto: {{ apto.areaApto }}</p>
-                <p>Área Escada: {{ apto.areaEscada }}</p>
-                <p>Área Apto + Escada: {{ apto.areaTotal }}</p>
-                <p>Nº da Vaga: {{ apto.numVaga }}</p>
-                <p>Tipologia da Vaga: {{ apto.tipologiaVaga }}</p>
+            <div [ngClass]="'painel-' + apto.number" *ngIf="selectedApto === apto.number">
+                <div class="planta-img">
+                    <button class="navigation-button" mat-icon-button (click)="changeImgPlanta('prev', apto.imgSrc)"
+                        [disabled]="currentImg === 1">
+                        <mat-icon>arrow_back_ios</mat-icon>
+                    </button>
+                    <img [src]="apto.imgSrc[currentImg - 1]" alt="Planta do Apto {{apto.number}}" class="planta-image" />
+                    <button class="navigation-button" mat-icon-button (click)="changeImgPlanta('next', apto.imgSrc)"
+                        [disabled]="currentImg === (apto.imgSrc.length)">
+                        <mat-icon>arrow_forward_ios</mat-icon>
+                    </button>
+                </div>
+                <div class="apto-info">
+                    <p><strong>Tipologia do Apto:</strong> <br> {{ apto.tipologia }} suítes</p>
+                    <p><strong>Área Apto:</strong> <br> {{ apto.areaApto }} m²</p>
+                    <p><strong>Área Escada:</strong> <br> {{ apto.areaEscada }} m²</p>
+                    <p><strong>Área Apto + Escada:</strong> <br> {{ apto.areaTotal }} m²</p>
+                    <p><strong>Nº da Vaga:</strong> <br> {{ apto.numVaga }}</p>
+                    <p><strong>Tipologia da Vaga:</strong> <br> {{ apto.tipologiaVaga }}</p>
+                </div>
             </div>
         </div>
     </div>

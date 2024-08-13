@@ -10,11 +10,11 @@ export class AreaComumComponent {
   selectedInfo = '';
 
   floors = [
-    { key: 'lazer', label: 'LAZER', imgSrc: '../../assets/imgs plantas/planta-lazer.png' },
-    { key: '2pavimento', label: '2º PAVIMENTO', imgSrc: '../../assets/imgs plantas/planta-2pavimento.png' },
-    { key: '1pavimento', label: '1º PAVIMENTO', imgSrc: '../../assets/imgs plantas/planta-1pavimento.png' },
-    { key: 'terreo', label: 'TERREO', imgSrc: '../../assets/imgs plantas/planta-terreo.png' },
-    { key: 'subsolo', label: 'SUBSOLO', imgSrc: '../../assets/imgs plantas/planta-subsolo.png' }
+    { key: 'lazer', label: 'LAZER', imgSrc: '../../assets/imgs plantas-area-comum/planta-lazer.png' },
+    { key: '2pavimento', label: '2º PAVIMENTO', imgSrc: '../../assets/imgs plantas-area-comum/planta-2pavimento.png' },
+    { key: '1pavimento', label: '1º PAVIMENTO', imgSrc: '../../assets/imgs plantas-area-comum/planta-1pavimento.png' },
+    { key: 'terreo', label: 'TERREO', imgSrc: '../../assets/imgs plantas-area-comum/planta-terreo.png' },
+    { key: 'subsolo', label: 'SUBSOLO', imgSrc: '../../assets/imgs plantas-area-comum/planta-subsolo.png' }
   ];
 
   floorInfo: {
