@@ -1,0 +1,100 @@
+.apto-container {
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--natto-primary-2);
+    padding: 50px;
+    height: 100%;
+    margin: 10px;
+}
+
+.menu-button-container {
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-item{
+    width: 125px;
+    padding: 10px;
+    height: 100%;
+    background-color: var(--natto-primary-light);
+    border: solid 1px #000;
+    color: white;
+}
+.menu-item-number{
+    font-size: 20px;
+}
+.menu-item-size{
+    font-size: 15px;
+}
+.menu-item:hover {
+    background-color: var(--natto-secondary-2);
+}
+
+.menu-item.active {
+    background-color: var(--natto-secondary);
+}
+
+.navigation-side-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+.navigation-button {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.radio-container mat-radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #fff;
+}
+
+.planta-container {
+    width: 70%;
+    background-color: var(--natto-primary-2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.apto-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.apto-info {
+    margin-left: 20px;
+}
+
+.apto-info p {
+    margin: 5px 0;
+}
+
+
+

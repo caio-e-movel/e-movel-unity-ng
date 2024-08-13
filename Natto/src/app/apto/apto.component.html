@@ -1,1 +1,41 @@
-<p>apto works!</p>
+<section class="apto-container">
+    <div class="side-menu">
+        <div class="navigation-side-wrap">
+            <button class="navigation-button" mat-icon-button (click)="changePage('prev')" [disabled]="currentPage === 1">
+                <mat-icon>arrow_back_ios</mat-icon>
+            </button>
+            <div class="menu-button-container">
+                <button class="menu-item" *ngFor="let apto of currentAptos"
+                    [ngClass]="{'active': selectedApto === apto.number}" (click)="selectApto(apto.number)">
+                    <div class="menu-item-number">{{ apto.number }}</div>
+                    <div class="menu-item-size">{{ apto.size }} m²</div>
+                </button>
+            </div>
+            <button class="navigation-button" mat-icon-button (click)="changePage('next')"
+                [disabled]="currentPage === (selectedView === 'frontal' ? apartments.frontal.length : apartments.posterior.length)">
+                <mat-icon>arrow_forward_ios</mat-icon>
+            </button>
+        </div>
+
+        <div class="radio-container">
+            <mat-radio-group [(ngModel)]="selectedView" (change)="onViewChange($event.value)" aria-label="Apto View">
+                <mat-radio-button value="frontal">Frontal</mat-radio-button>
+                <mat-radio-button value="posterior">Posterior</mat-radio-button>
+            </mat-radio-group>
+        </div>
+    </div>
+
+    <div class="planta-container">
+        <div *ngFor="let apto of currentAptos" class="apto-details">
+            <img [src]="apto.imgSrc" alt="Planta do Apto {{apto.number}}" />
+            <div class="apto-info">
+                <p>Tipologia do Apto: {{ apto.tipologia }}</p>
+                <p>Área Apto: {{ apto.areaApto }}</p>
+                <p>Área Escada: {{ apto.areaEscada }}</p>
+                <p>Área Apto + Escada: {{ apto.areaTotal }}</p>
+                <p>Nº da Vaga: {{ apto.numVaga }}</p>
+                <p>Tipologia da Vaga: {{ apto.tipologiaVaga }}</p>
+            </div>
+        </div>
+    </div>
+</section>
