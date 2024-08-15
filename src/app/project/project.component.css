@@ -73,5 +73,36 @@ img {
     color: #fff;
 }
 
-.modal-content{
+.modal-title{
+    margin: 0px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Reduz a área clicável das setas para aproximá-las do canto */
+}
+
+.carousel-control-prev {
+    left: 10px; /* Define a distância da seta da borda esquerda */
+}
+
+.carousel-control-next {
+    right: 10px; /* Define a distância da seta da borda direita */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
 }

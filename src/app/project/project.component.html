@@ -3,91 +3,156 @@
     <div class="project-bg">
         <img class="project-bg-img" src="../assets/imgs fundo/fundo2.jpg" alt="">
         <div class="project-bg-btns">
-            <button class="project-btn w-100 m-2 rounded" data-bs-toggle="modal" data-bs-target="#diferenciais-modal">DIFERENCIAIS</button>
-            <button class="project-btn w-100 m-2 rounded" data-bs-toggle="modal" data-bs-target="#ficha-tecnica-modal">FICHA TÉCNICA</button>
-            <button class="project-btn w-100 m-2 rounded" data-bs-toggle="modal" data-bs-target="#empreendedores-modal">EMPREENDEDORES</button>
+            <button class="project-btn w-100 m-2 rounded" data-bs-toggle="modal"
+                data-bs-target="#diferenciais-modal">DIFERENCIAIS</button>
+            <button class="project-btn w-100 m-2 rounded" data-bs-toggle="modal"
+                data-bs-target="#ficha-tecnica-modal">FICHA TÉCNICA</button>
+            <button class="project-btn w-100 m-2 rounded" data-bs-toggle="modal"
+                data-bs-target="#empreendedores-modal">EMPREENDEDORES</button>
         </div>
     </div>
     <img class="project-logo" src="../../assets/imgs logos/logo-project-natto.png" alt="">
-  </section>
-  
-  <!-- Modal Ficha Técnica -->
-  <div class="modal fade" id="ficha-tecnica-modal" tabindex="-1" aria-hidden="true">
+</section>
+
+<!-- Modal Ficha Técnica -->
+<div class="modal fade" id="ficha-tecnica-modal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header w-100">
-                <h1 class="modal-title fs-3 text-center w-100" id="exampleModalLabel">FICHA TÉCNICA</h1>
-                <button type="button" class="fs-5 btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="tech-details">
-                    <div class="tech-column">
-                        <h5>Construção</h5>
-                        <p>Previsão de Início da Obra: Junho/2023</p>
-                        <p>Previsão de Término da Obra: Fevereiro/2026</p>
-                        <p>Incorporação: SPE T-28 BUENO EMPREENDIMENTOS IMOBILIARIOS LTDA</p>
-                        <p>Construção: EMISA ENGENHARIA E COMÉRCIO LTDA</p>
-                        <p>Realização: SOMOS DESENVOLVIMENTO IMOBILIÁRIO LTDA</p>
-                        <p>PARTINI INCORPORAÇÕES E NEGOCIOS IMOBILIARIOS LTDA.</p>
-                        <p>TRINUS CO. PARTICIPAÇÕES S.A.</p>
-                        <p>EMISA ENGENHARIA E COMÉRCIO LTDA</p>
+            <div id="fichaCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="w-100 d-flex justify-content-end">
+                    <button type="button" class="fs-5 p-3 btn btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h1 class="modal-title fs-3 text-center w-100" id="exampleModalLabel">FICHA TÉCNICA</h1>
+                        <div class="tech-details p-5">
+                            <div class="tech-column">
+                                <h5 class="fs-5">Construção</h5>
+                                <p>Previsão de Início da Obra: Junho/2023</p>
+                                <p>Previsão de Término da Obra: Fevereiro/2026</p>
+                                <p>Incorporação: SPE T-28 BUENO EMPREENDIMENTOS IMOBILIARIOS LTDA</p>
+                                <p>Construção: EMISA ENGENHARIA E COMÉRCIO LTDA</p>
+                                <p>Realização: SOMOS DESENVOLVIMENTO IMOBILIÁRIO LTDA</p>
+                                <p>PARTINI INCORPORAÇÕES E NEGOCIOS IMOBILIARIOS LTDA.</p>
+                                <p>TRINUS CO. PARTICIPAÇÕES S.A.</p>
+                                <p>EMISA ENGENHARIA E COMÉRCIO LTDA</p>
+                            </div>
+                            <div class="tech-column">
+                                <h5 class="fs-5">Nº de pavimentos</h5>
+                                <p>1 torre com 31 pavimentos + cobertura, sendo:</p>
+                                <ul>
+                                </ul>
+                                <li>Subsolo 01</li>
+                                <li>Térreo</li>
+                                <li>1º pavimento (garagem)</li>
+                                <li>2º pavimento (garagem)</li>
+                                <li>Pavimento Lazer</li>
+                                <li>4º ao 27º pavimento (apartamentos)</li>
+                                <li>28º pavimento (apartamentos duplex inferiores)</li>
+                                <li>29º pavimento (apartamentos duplex superiores e mesa motores dos elevadores) e
+                                    ático
+                                    (barrilete e reservatório)</li>
+                            </div>
+                            <div class="tech-column">
+                                <h5 class="fs-5">Área do Terreno</h5>
+                                <p>1.500,00 m²</p>
+                                <h5 class="fs-5">Área Total Construída</h5>
+                                <p>18.208,34 m²</p>
+                                <h5 class="fs-5">Projetos/ Consultoria</h5>
+                                <p>Arquitetura: Norte Design Arquitetos e Associados S/S</p>
+                                <p>Arquitetura de Interiores: Norte Design Arquitetos e Associados S/S</p>
+                                <p>Arquitetura Paisagista: Norte Design Arquitetos e Associados S/S</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tech-column">
-                        <h5>Nº de pavimentos</h5>
-                        <p>1 torre com 31 pavimentos + cobertura, sendo:</p>
-                        <ul>
-                        </ul>
-                        <li>Subsolo 01</li>
-                        <li>Térreo</li>
-                        <li>1º pavimento (garagem)</li>
-                        <li>2º pavimento (garagem)</li>
-                        <li>Pavimento Lazer</li>
-                        <li>4º ao 27º pavimento (apartamentos)</li>
-                        <li>28º pavimento (apartamentos duplex inferiores)</li>
-                        <li>29º pavimento (apartamentos duplex superiores e mesa motores dos elevadores) e ático (barrilete e reservatório)</li>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-evenly align-items-center">
+                            <img class="w-25" src="../../assets/imgs project/frontal.png" alt="">
+                            <h2>CORTE ESQUEMÁTICO</h2>
+                            <img class="w-25" src="../../assets/imgs project/posterior.png" alt="">
+                        </div>
                     </div>
-                    <div class="tech-column">
-                        <h5>Área do Terreno</h5>
-                        <p>1.500,00 m²</p>
-                        <h5>Área Total Construída</h5>
-                        <p>18.208,34 m²</p>
-                        <h5>Projetos/ Consultoria</h5>
-                        <p>Arquitetura: Norte Design Arquitetos e Associados S/S</p>
-                        <p>Arquitetura de Interiores: Norte Design Arquitetos e Associados S/S</p>
-                        <p>Arquitetura Paisagista: Norte Design Arquitetos e Associados S/S</p>
+                    <div class="carousel-item">
+                        <h1 class="modal-title fs-3 text-center w-100" id="exampleModalLabel">PLANTA DE FINAIS</h1>
+                        <div class="d-flex justify-content-evenly align-items-center p-3">
+                            <img class="w-50" src="../../assets/imgs project/planta de finais.png" alt="">
+                        </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#fichaCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#fichaCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-  </div>
-  
-  <!-- Modal Diferenciais (placeholder) -->
-  <div class="modal fade" id="diferenciais-modal" tabindex="-1" aria-hidden="true">
+</div>
+
+<!-- Modal Diferenciais -->
+<div class="modal fade" id="diferenciais-modal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
-        <div class="modal-content bg-dark">
+        <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Diferenciais</h1>
-                <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                <h1 class="modal-title fs-3" id="exampleModalLabel">Diferenciais</h1>
+                <button type="button" class="fs-5 btn btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
             </div>
             <div class="modal-body">
-                <!-- Conteúdo do Diferenciais -->
+                <!-- Navegação entre modais -->
+                <div id="diferenciaisCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <img src="../../assets/imgs project/diferenciais.png" class="d-block w-100"
+                                alt="Diferenciais 1">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <img src="../../assets/imgs project/diferenciaisconforto.png" class="d-block w-100"
+                                alt="Diferenciais 2">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <img src="../../assets/imgs project/diferenciaisseguranca.png" class="d-block w-100"
+                                alt="Diferenciais 3">
+                        </div>
+                    </div>
+                    <!-- Controles do Carousel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#diferenciaisCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#diferenciaisCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-  </div>
-  
-  <!-- Modal Empreendedores (já existente) -->
-  <div class="modal fade" id="empreendedores-modal" tabindex="-1" aria-hidden="true">
+</div>
+
+<!-- Modal Empreendedores (já existente) -->
+<div class="modal fade" id="empreendedores-modal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content bg-dark">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Empreendedores</h1>
-                <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                <button type="button" class="fs-5 btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body row d-flex align-items-center">
                 <div class="col-lg-1">
-                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#api-contatos-modal"><i class="bi bi-caret-left-fill"></i></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                        data-bs-target="#api-contatos-modal"><i class="bi bi-caret-left-fill"></i></button>
                 </div>
                 <div class="col-lg-10 d-flex justify-content-center flex-column align-items-center">
                     <h4>Tecnologias utilizadas:</h4>
@@ -95,5 +160,4 @@
             </div>
         </div>
     </div>
-  </div>
-  
+</div>

@@ -23,8 +23,8 @@ export class AptoComponent {
         { number: '602', size: '142,24', imgSrc: ['../../assets/imgs plantas-aptos/122-02.png', '../../assets/imgs plantas-aptos/122-02-suitemaster-ampliada.png', '../../assets/imgs plantas-aptos/122-02-suitemaster-office.png'], tipologia: '3', areaApto: '126.96', areaEscada: '15.28', areaTotal: '142.24', numVaga: '14', tipologiaVaga: 'Coberta' },
         { number: '501', size: '142,21', imgSrc: ['../../assets/imgs plantas-aptos/122-01.png'], tipologia: '3', areaApto: '127.13', areaEscada: '15.08', areaTotal: '142.21', numVaga: '10', tipologiaVaga: 'Coberta' },
         { number: '502', size: '142,24', imgSrc: ['../../assets/imgs plantas-aptos/122-02.png', '../../assets/imgs plantas-aptos/122-02-suitemaster-ampliada.png', '../../assets/imgs plantas-aptos/122-02-suitemaster-office.png'], tipologia: '3', areaApto: '126.96', areaEscada: '15.28', areaTotal: '142.24', numVaga: '11', tipologiaVaga: 'Coberta' },
-        { number: '401', size: '142,21', imgSrc: ['../../assets/imgs plantas-aptos/142-01.png'], tipologia: '3', areaApto: '138,5', areaEscada: '3,71', areaTotal: '142.21', numVaga: '112 e 32', tipologiaVaga: 'Simples' },
-        { number: '402', size: '142,24', imgSrc: ['../../assets/imgs plantas-aptos/142-02.png'], tipologia: '3', areaApto: '138,02', areaEscada: '4,22', areaTotal: '142.24', numVaga: '08/08A', tipologiaVaga: 'Dupla' },
+        { number: '401', size: '142,21', imgSrc: ['../../assets/imgs plantas-aptos/142-01.png'], tipologia: '3', areaApto: '138,5', areaEscada: '3,71', areaTotal: '142,21', numVaga: '112 e 32', tipologiaVaga: 'Simples' },
+        { number: '402', size: '142,24', imgSrc: ['../../assets/imgs plantas-aptos/142-02.png'], tipologia: '3', areaApto: '138,02', areaEscada: '4,22', areaTotal: '142,24', numVaga: '08/08A', tipologiaVaga: 'Dupla' },
       ],
       // 901 até 1302
       [
