@@ -1,21 +1,41 @@
 <section class="local-page">
-    <div class="localizacao-container">
-        <h2 class="local-title w-50">Localização</h2>
-        <div class="categorias-container">
-          <div class="categoria" *ngFor="let local of localizacoes">
-            <div class="categoria-content" *ngIf="local.visibility">
-              <div class="categoria-header">
-                  <h3>{{ local.categoria }}</h3>
-                  <button (click)="toggleVisibility(local)" type="button" class="fs-5 btn btn-close" aria-label="Close"></button>
-              </div>
-              <ul>
-                <li class="categoria-item" *ngFor="let item of local.itens">
-                  <p>{{ item.name }}</p>
-                  <p>{{ item.time }}</p></li>
-              </ul>
-            </div>
+  <div class="localizacao-container">
+    <h2 class="local-title w-50">Localização</h2>
+    <div class="categorias-container">
+      <div class="categoria" *ngFor="let local of localizacoes">
+        <div class="categoria-content" *ngIf="local.visibility">
+          <div class="categoria-header">
+            <h3>{{ local.categoria }}</h3>
+            <button (click)="toggleVisibility(local)" type="button" class="fs-5 btn btn-close" aria-label="Close"></button>
+          </div>
+          <ul>
+            <li class="categoria-item" *ngFor="let item of local.itens"
+                data-bs-toggle="modal" [attr.data-bs-target]="'#modal-' + getModalId(local.categoria, item.name)">
+              <p>{{ item.name }}</p>
+              <p>{{ item.time }}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modais -->
+<div *ngFor="let local of localizacoes">
+  <div *ngFor="let item of local.itens">
+    <div class="modal fade" [id]="'modal-' + getModalId(local.categoria, item.name)" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h1 class="modal-title">{{ item.name }}</h1>
+            <button type="button" class="fs-5 btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img [src]="getImagePath(local.categoria, item.link)" [alt]="item.name" class="img-fluid">
           </div>
         </div>
       </div>
-      
-</section>
+    </div>
+  </div>
+</div>

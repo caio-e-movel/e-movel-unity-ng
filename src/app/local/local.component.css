@@ -50,6 +50,7 @@
 }
 .categoria-header .btn-close{
     cursor: pointer;
+    user-select: none;
 }
 .categoria ul {
     list-style-type: none;
@@ -72,5 +73,16 @@
 
 .categoria-item:hover{
     cursor: pointer;
+    user-select: none;
     background-color: var(--natto-secondary);
+}
+
+.modal-body img {
+    width: 100%;
+    height: auto;
+}
+
+.modal-title{
+    color: #fff;
+    margin: 0px;
 }

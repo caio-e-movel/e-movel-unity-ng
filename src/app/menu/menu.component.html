@@ -1,12 +1,16 @@
 <header class="navbar navbar-expand text-center pe-5 ps-5">
     <div class="container-fluid w-100">
-        <ul class="menu navbar-nav w-100 d-flex justify-content-center">
-            <li class="menu__item nav-link m-1 rounded" *ngFor="let item of menu_itens" routerLink="{{item.link | lowercase}}">
-                <mat-icon>{{item.icon}}</mat-icon>
-                <span class="m-1">
-                    {{item.name | uppercase}}
-                </span>
-            </li>
-        </ul>
+      <ul class="menu navbar-nav w-100 d-flex justify-content-center">
+        <li class="menu__item nav-link m-1 rounded"
+            *ngFor="let item of menu_itens"
+            [routerLink]="item.link | lowercase"
+            routerLinkActive="active">
+          <mat-icon>{{item.icon}}</mat-icon>
+          <span class="m-1">
+            {{item.name | uppercase}}
+          </span>
+        </li>
+      </ul>
     </div>
-</header>
+  </header>
+  

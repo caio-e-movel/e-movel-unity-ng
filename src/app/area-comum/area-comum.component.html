@@ -1,20 +1,52 @@
 <section class="area-comum-container">
   <div class="side-menu">
     <button class="menu-item" *ngFor="let floor of floors" [ngClass]="{'active': selectedFloor === floor.key}"
-      (click)="selectFloor(floor.key)">{{floor.label}}</button>
+      (click)="selectFloor(floor.key)">
+      {{ floor.label }}
+    </button>
   </div>
   <div class="planta-container">
     <div class="container" *ngFor="let floor of floors">
-      <div [ngClass]="'painel-' + floor.key" *ngIf="selectedFloor === floor.key">
+      <div class="d-flex flex-column justify-content-center align-items-center" [ngClass]="'painel-' + floor.key"
+        *ngIf="selectedFloor === floor.key">
         <div class="floor-plan">
           <img [src]="floor.imgSrc" [alt]="'Planta do ' + floor.label">
+          <div class="pins-container">
+            <div *ngFor="let info of selectedFloorInfo" class="pin"
+              [ngClass]="{'active': selectedInfo === info.description}" (click)="selectInfo(info.description)"
+              [style.top]="info.y + '%'" [style.left]="info.x + '%'" data-bs-toggle="modal"
+              [attr.data-bs-target]="'#' + getModalId(info.link)">
+              <span>{{ info.number }}</span>
+            </div>
+          </div>
         </div>
         <div class="floor-info">
-          <div class="info-item" *ngFor="let info of selectedFloorInfo" [ngClass]="{'active': selectedInfo === info.description}" (click)="selectInfo(info.description)">
-            <span>{{info.number}}</span> <span>{{info.description}}</span>
+          <div class="info-item" *ngFor="let info of selectedFloorInfo"
+            [ngClass]="{'active': selectedInfo === info.description}" (click)="selectInfo(info.description)"
+            data-bs-toggle="modal" [attr.data-bs-target]="'#' + getModalId(info.link)">
+            <span class="info-number">{{ info.number }}</span>
+            <span class="info-description">{{ info.description }}</span>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Modais -->
+<div *ngFor="let floor of floors">
+  <div *ngFor="let info of floorInfo[floor.key]">
+    <div *ngIf="info.link" class="modal fade" [id]="getModalId(info.link)" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h1 class="modal-title">{{ info.description }}</h1>
+            <button type="button" class="fs-5 btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center">
+            <img [src]="getImagePath(info.link)" [alt]="info.description" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

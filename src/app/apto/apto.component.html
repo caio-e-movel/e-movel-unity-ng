@@ -9,7 +9,7 @@
                 <button class="menu-item" *ngFor="let apto of currentAptos"
                     [ngClass]="{'active': selectedApto === apto.number}" (click)="selectApto(apto.number)">
                     <div class="menu-item-number">{{ apto.number }}</div>
-                    <div class="menu-item-size">{{ apto.size }} m²</div>
+                    <div class="menu-item-size">{{ apto.areaTotal }} m²</div>
                 </button>
             </div>
             <button class="navigation-button" mat-icon-button (click)="changePage('next')"

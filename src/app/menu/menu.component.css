@@ -8,6 +8,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 .menu__item:hover{
     cursor: pointer;
@@ -15,5 +16,9 @@
     scale: 1.05;
 }
 .menu__item:focus{
+    background-color: var(--natto-secondary);
+}
+
+.menu__item.active {
     background-color: var(--natto-secondary);
 }

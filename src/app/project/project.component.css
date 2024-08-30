@@ -9,6 +9,15 @@
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
 }
+.modal{
+    background-image: url('../../assets/imgs fundo/fundo2.jpg');
+}
+#empreendedores-modal .modal-content{
+    background-image: url('../../assets/imgs fundo/fundopanel.jpg');
+}
+#empreendedoresCarousel{
+    color: #4F6368;
+}
 img {
     height: 100%;
     
